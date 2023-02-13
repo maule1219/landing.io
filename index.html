@@ -1,35 +1,94 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Landing Page</title>
-    <link rel="stylesheet" href="style.CSS">
-    <style>
-      .box {
-        width: 200px;
-        height: 200px;
-        background-color: yellow;
-      }
-    </style>
-    <script src="main.js"></script>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to My Landing Page</h1>
-    </header>
-    <main>
-      <div class="box"></div>
-      <p>CONNECT TO OUR CHANNEL</p>
-      <form action="https://formspree.io/f/mvonkzdd" method="POST">
-        <label>
-          Email:
-          <input type="email" name="email">
-        </label>
-        <button type="submit">Subscribe</button>
-      </form>
-    </main>
-    <footer>
-      <p>&copy; 2023 MAULE 1219</p>
-    </footer>
-  </body>
-</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Landing Page</title>
+<link rel="stylesheet" href="style.CSS">
+
+<style>
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+  }
+  .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .screen {
+    width: 250px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 50px);
+  }
+  .ui {
+    width: 100%;
+    height: 300px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .calling {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .body {
+    width: 250px;
+    height: 200px;
+    background-color: gray;
+  }
+</style>
+<script src="main.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Landing Page</h1>
+  </header>
+  <main>
+    <div class="box"></div>
+    <div class="phone">
+      <div id="counterDiv"></div>
+      <div class="screen">
+        <div class="screen_stuff logo"></div>
+        <div class="screen_stuff ui">
+          <div class="calling">
+            <p>CONNECT TO OUR CHANNEL</p>
+            <form action="https://formspree.io/f/mvonkzdd" method="POST">
+              <label>
+                Email:
+                <input type="email" name="email">
+              </label>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="body"></div>
+    </div>
+    <div class="box"></div>
+  </main>
+  <footer>
+    <p>&copy; 2023 MAULE 1219</p>
+  </footer>
+</body>
+

@@ -1,8 +1,6 @@
 // main.js
 document.addEventListener("DOMContentLoaded", function() {
 
-
-
   // Get references to the form and submit button
   const form = document.querySelector('form');
   const submitButton = form.querySelector('button[type="submit"]');
@@ -37,3 +35,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 1000);
   });
 });
+

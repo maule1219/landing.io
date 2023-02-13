@@ -1,15 +1,9 @@
-// main.js
 document.addEventListener("DOMContentLoaded", function() {
-  var box = document.querySelector(".box");
-  box.addEventListener("mouseenter", function() {
-    box.style.backgroundColor = "#333";
-    box.style.color = "#fff";
-    box.innerHTML = "Subscribe for updates";
+  var logo = document.querySelector("img");
+  logo.addEventListener("mouseover", function() {
+    logo.style.transform = "scale(1.2)";
   });
-  box.addEventListener("mouseleave", function() {
-    box.style.backgroundColor = "#ffd700";
-    box.style.color = "#333";
-    box.innerHTML = "";
+  logo.addEventListener("mouseout", function() {
+    logo.style.transform = "scale(1)";
   });
 });
-

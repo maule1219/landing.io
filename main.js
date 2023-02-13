@@ -1,14 +1,7 @@
 // main.js
 document.addEventListener("DOMContentLoaded", function() {
 
-// Get references to the navigation menu and toggle button
-  const navigation = document.querySelector('header nav');
-  const toggleButton = document.querySelector('header button');
 
-  // Toggle the navigation menu on click of the hamburger button
-  toggleButton.addEventListener('click', function() {
-    navigation.classList.toggle('show');
-    this.classList.toggle('active');
 
   // Get references to the form and submit button
   const form = document.querySelector('form');

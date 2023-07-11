@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Show a loading spinner when the form is submitted
   form.addEventListener('submit', function(event) {
-    event.preventDefault();
     submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
 
     // Use setTimeout to simulate an API call

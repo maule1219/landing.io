@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Show a loading spinner when the form is submitted
   form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
     submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
 
     // Use setTimeout to simulate an API call
@@ -18,11 +20,10 @@ document.addEventListener("DOMContentLoaded", function() {
       // Show a modal with a success message
       const modal = document.createElement('div');
       modal.classList.add('modal');
-      modal.innerHTML = `
-        <div class="modal-content">
-          <p>You have successfully subscribed to our line!</p>
-        </div>
-      `;
+      const modalContent = document.createElement('div');
+      modalContent.classList.add('modal-content');
+      modalContent.innerHTML = '<p>You have successfully subscribed to our line!</p>';
+      modal.appendChild(modalContent);
       document.body.appendChild(modal);
       modal.style.display = 'block';
 
@@ -34,4 +35,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 1000);
   });
 });
-

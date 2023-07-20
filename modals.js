@@ -1,8 +1,8 @@
-// modals.js
+// modal.js
 document.addEventListener("DOMContentLoaded", function() {
   var trigger = document.querySelector("input[type='submit']");
   var modal = document.createElement("div");
-  modal.classList.add("modal"); // Adding a class to style the modal
+  modal.className = "modal"; // Adding a class to style the modal
 
   // Assuming there's a modal content to display
   var modalContent = document.createElement("div");
@@ -25,3 +25,4 @@ document.addEventListener("DOMContentLoaded", function() {
   // Append the modal to the document body
   document.body.appendChild(modal);
 });
+

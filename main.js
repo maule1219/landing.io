@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Use setTimeout to simulate an API call
     setTimeout(function() {
       // Remove the loading spinner and show a success message
-      submitButton.innerHTML = 'Cinco Cinco - Success!';
+      submitButton.innerHTML = 'Connected!';
       form.reset();
 
       // Show a modal with a success message
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
       modal.classList.add('modal');
       const modalContent = document.createElement('div');
       modalContent.classList.add('modal-content');
-      modalContent.innerHTML = '<p>You have successfully subscribed to our line!</p>';
+      modalContent.innerHTML = '<p>You have subscribed to our private line.</p>';
       modal.appendChild(modalContent);
       document.body.appendChild(modal);
       modal.style.display = 'block';
